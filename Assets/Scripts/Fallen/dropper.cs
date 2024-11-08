@@ -13,8 +13,7 @@ public class CylinderDropper : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        cylinderRenderer = GetComponent<Renderer>();
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        //grabInteractable = GetComponent<XRGrabInteractable>();
 
         // Add listener for select event to change color
         //grabInteractable.selectEntered.AddListener(ChangeColor);
