@@ -9,6 +9,7 @@ public class CylinderDropper : MonoBehaviour
     private Rigidbody rb;
     private Renderer cylinderRenderer;
     private XRGrabInteractable grabInteractable;
+    public Color newColor = Color.red;
 
     void Start()
     {
@@ -35,5 +36,24 @@ public class CylinderDropper : MonoBehaviour
     private Color GetRandomColor()
     {
         return new Color(Random.value, Random.value, Random.value);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "GameController")
+        {
+            // Get the Renderer component of the object and change the material color
+            Renderer renderer = GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                renderer.material.color = newColor;
+            }
+        }
+        //Renderer renderer = GetComponent<Renderer>();
+        //if (renderer != null)
+        //{
+        //    renderer.material.color = newColor;
+        //}
     }
 }
