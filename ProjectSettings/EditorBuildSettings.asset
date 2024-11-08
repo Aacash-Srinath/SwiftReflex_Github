@@ -9,13 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 181d6f4ec6d47d6419ecd451e489b53c
   - enabled: 1
-    path: Assets/Scenes/EasyMode.unity
+    path: Assets/Scenes/SaberStrike/EasyMode.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/MediumMode.unity
+    path: Assets/Scenes/SaberStrike/MediumMode.unity
     guid: 9749e0e216dd0cb4c8bdc6b61e780820
   - enabled: 1
-    path: Assets/Scenes/HardMode.unity
+    path: Assets/Scenes/SaberStrike/HardMode.unity
     guid: 4b61a86893572964397e15adfc2defbd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 12d8d97cba59cc64ea9c8fd1f01b4546,
