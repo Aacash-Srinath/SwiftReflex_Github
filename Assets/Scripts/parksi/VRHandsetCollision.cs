@@ -7,6 +7,7 @@ public class VRHandsetCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        textDisplay.text = "Collided";
         // Check if the object collided with is the 2D image (tag it as "Image" or similar)
         if (other.gameObject.CompareTag("Image"))
         {
