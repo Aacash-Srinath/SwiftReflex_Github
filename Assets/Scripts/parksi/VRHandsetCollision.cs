@@ -5,10 +5,10 @@ public class VRHandsetCollision : MonoBehaviour
 {
     public TextMeshProUGUI textDisplay;  // Assign this in the Inspector
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        // Check if the object colliding is the VR Handset (tag it as "VRHandset")
-        if (collision.gameObject.CompareTag("VRHandset"))
+        // Check if the object collided with is the 2D image (tag it as "Image" or similar)
+        if (other.gameObject.CompareTag("Image"))
         {
             textDisplay.text = "Collided";
         }
