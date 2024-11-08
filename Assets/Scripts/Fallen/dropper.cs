@@ -7,18 +7,16 @@ public class CylinderDropper : MonoBehaviour
     public float minDelay = 1.0f;
     public float maxDelay = 10.0f;
     private Rigidbody rb;
+    private Collider objectCollider;
     private Renderer cylinderRenderer;
     private XRGrabInteractable grabInteractable;
-    public Color newColor = Color.red;
+    public Color newColor = Color.green;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //grabInteractable = GetComponent<XRGrabInteractable>();
-
-        // Add listener for select event to change color
-        //grabInteractable.selectEntered.AddListener(ChangeColor);
-
+        objectCollider = GetComponent<Collider>();
+        objectCollider.enabled = false;
         StartCoroutine(DropCylinder());
     }
 
@@ -26,16 +24,7 @@ public class CylinderDropper : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(minDelay, maxDelay));
         rb.useGravity = true;
-    }
-
-    private void ChangeColor(SelectEnterEventArgs args)
-    {
-        cylinderRenderer.material.color = GetRandomColor();
-    }
-
-    private Color GetRandomColor()
-    {
-        return new Color(Random.value, Random.value, Random.value);
+        objectCollider.enabled = true;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -43,17 +32,12 @@ public class CylinderDropper : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "GameController")
         {
-            // Get the Renderer component of the object and change the material color
             Renderer renderer = GetComponent<Renderer>();
             if (renderer != null)
             {
                 renderer.material.color = newColor;
+                ScoreManager.AddScore(10);
             }
         }
-        //Renderer renderer = GetComponent<Renderer>();
-        //if (renderer != null)
-        //{
-        //    renderer.material.color = newColor;
-        //}
     }
 }
