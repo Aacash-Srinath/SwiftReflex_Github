@@ -17,7 +17,7 @@ public class CylinderDropper : MonoBehaviour
         grabInteractable = GetComponent<XRGrabInteractable>();
 
         // Add listener for select event to change color
-        grabInteractable.selectEntered.AddListener(ChangeColor);
+        //grabInteractable.selectEntered.AddListener(ChangeColor);
 
         StartCoroutine(DropCylinder());
     }
