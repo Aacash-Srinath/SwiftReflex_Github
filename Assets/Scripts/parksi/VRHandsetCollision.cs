@@ -1,17 +1,16 @@
 using UnityEngine;
 using TMPro;
 
-public class VRHandsetCollision : MonoBehaviour
+public class ObjectCollision : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;  // Assign this in the Inspector
+    public TextMeshProUGUI textDisplay;  // Assign in Inspector
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        textDisplay.text = "Collided";
-        // Check if the object collided with is the 2D image (tag it as "Image" or similar)
-        if (other.gameObject.CompareTag("Image"))
+        // Check if the colliding object has the tag "MovingObject"
+        if (other.CompareTag("3DObject"))
         {
-            textDisplay.text = "Collided";
+            textDisplay.text = "Collision Detected!";
         }
     }
 }

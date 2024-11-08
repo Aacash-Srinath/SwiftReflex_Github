@@ -6,6 +6,7 @@ TagManager:
   tags:
   - VRHandset
   - Image
+  - 3DObject
   layers:
   - Default
   - TransparentFX
