@@ -18,8 +18,17 @@ EditorBuildSettings:
     path: Assets/Scenes/SaberStrike/HardMode.unity
     guid: 4b61a86893572964397e15adfc2defbd
   - enabled: 1
+    path: Assets/Scenes/parksi/TheEnd.unity
+    guid: 6c0ad2b7a472b3a4dac31a74d74193ab
+  - enabled: 1
+    path: Assets/Scenes/parksi/Level2.unity
+    guid: ac073a040d91a004483df70e5c83d0c1
+  - enabled: 1
     path: Assets/Scenes/parksi/Level1.unity
     guid: 91b20308204dd07409f3195855c6a598
+  - enabled: 1
+    path: Assets/Scenes/parksi/Level3.unity
+    guid: cbb5664cb8e1d5142ac04839ff51a9e9
   - enabled: 1
     path: Assets/Scenes/parksi/gameover.unity
     guid: 4f6c5888bfbf74d45a2a7e020afbdc71
