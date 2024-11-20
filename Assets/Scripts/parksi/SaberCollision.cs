@@ -8,11 +8,6 @@ public class SaberCollision : MonoBehaviour
     public TextMeshProUGUI collisionText; // Reference to the TextMeshPro text field
     private int check=0;
     private int levelcheck = 0;
-    void Start()
-    {
-        levelcheck = 0;
-    }
-
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag=="Image")
@@ -36,14 +31,15 @@ public class SaberCollision : MonoBehaviour
                 collisionText.text = "Yay! You have successfully completed the path";
                 if (levelcheck == 0)
                 {
-                    levelcheck = 1;
-
+                    levelcheck = levelcheck + 1;
+                    collisionText.text = "Level check changed to " + levelcheck;
                     StartCoroutine(SwitchSceneAfterDelay("Level2", 0.5f));
                     
                 }
                 else if (levelcheck == 1)
                 {
-                    levelcheck = 2;
+                    levelcheck = levelcheck + 1; 
+                    collisionText.text = "Level check changed to" + levelcheck;
                     StartCoroutine(SwitchSceneAfterDelay("Level3", 0.5f));
                     
                 }

@@ -20,6 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fallen/FallenEasy.unity
     guid: acfd8bc07d580a74ebb9b6e6d9840e59
+  - enabled: 1
+    path: Assets/Scenes/parksi/gameover.unity
+    guid: 4f6c5888bfbf74d45a2a7e020afbdc71
+  - enabled: 1
+    path: Assets/Scenes/parksi/Level1.unity
+    guid: 91b20308204dd07409f3195855c6a598
+  - enabled: 1
+    path: Assets/Scenes/parksi/Level2.unity
+    guid: ac073a040d91a004483df70e5c83d0c1
+  - enabled: 1
+    path: Assets/Scenes/parksi/Level3.unity
+    guid: cbb5664cb8e1d5142ac04839ff51a9e9
+  - enabled: 1
+    path: Assets/Scenes/parksi/TheEnd.unity
+    guid: 6c0ad2b7a472b3a4dac31a74d74193ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 12d8d97cba59cc64ea9c8fd1f01b4546,
       type: 2}
