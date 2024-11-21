@@ -451,11 +451,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7218470544182144945, guid: cd884ac29e891394199bb1d0f419808e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 90202503}
+      addedObject: {fileID: 90202504}
     - targetCorrespondingSourceObject: {fileID: 7218470544182144945, guid: cd884ac29e891394199bb1d0f419808e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 90202504}
+      addedObject: {fileID: 90202505}
   m_SourcePrefab: {fileID: 100100000, guid: cd884ac29e891394199bb1d0f419808e, type: 3}
 --- !u!4 &90202499 stripped
 Transform:
@@ -490,19 +490,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0000012, y: 1.0000001, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &90202503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 90202500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fb5c32b7eff37142a97812fb59fcf35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionText: {fileID: 2080220846}
 --- !u!54 &90202504
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -530,6 +517,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &90202505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90202500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b998e8a7ad0754ebad7d860db7603d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionText: {fileID: 2080220846}
 --- !u!1 &174010252
 GameObject:
   m_ObjectHideFlags: 0
